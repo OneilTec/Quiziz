@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Noto Sans Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiziz</title>
+</head>
+<body>
+    <div class="Question_box">
+        <div class="Title"><p>Quiz</p></div>
+        <div class="Quiz">
+            <div id = "Question">Here is my question</div>
+            <div id = "Choices">
+                <button class="Choice">Choice 1</button>
+                <button class="Choice">Choice 2</button>
+                <button class="Choice">Choice 3</button>
+                <button class="Choice">Choice 4</button>
+            </div>
+            <div class="Next_btn_area">
+                <div id = "audio_Ctrl" class="audio-player">
+                    <audio id="audio" src="onepiece.mp3" loop></audio>
+                    <button id="playPauseBtn"><i class="fas fa-play"></i></button>
+                    <input type="range" id="audioRange" value="0" min="0" step="1">
+                    <button id="muteBtn"><i class="fas fa-volume-up"></i></button>
+                </div>
+                <button id = "Next_btn">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

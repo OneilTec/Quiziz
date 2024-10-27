@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Noto Sans Arabic','Roboto', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e1015;
+}
+
+.Question_box{
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: #181a20;
+}
+
+.Question_box .Title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #606a7b ;
+}
+
+.Question_box .Quiz {
+    padding: 24px 0px 0px;
+}
+
+.Question_box .Quiz #Question {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.Question_box .Quiz #Choices .Choice{
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: linear;
+    transition-duration: 0.2s;
+    background-color: #272b34;
+}
+
+.Question_box .Quiz #Choices .Choice:hover {
+    background-color: rgba(39, 43, 52, 0.4);
+}
+
+.Question_box .Quiz .Next_btn_area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding-top: 22px;
+}
+
+.Question_box .Quiz .Next_btn_area #Next_btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: linear;
+    transition-duration: 0.2s;
+    background-color: #C1234F;
+}
+
+.Question_box .Quiz #Next_btn:hover {
+    background-color: rgba(193, 35, 79, 0.7);
+}
+
+.Question_box .Quiz .Next_btn_area #Next_btn:disabled {
+    cursor: not-allowed; /* تغيير شكل المؤشر إلى "not allowed" */
+    opacity: 0.5; /* تقليل الشفافية لإظهار أن الزر غير مفعل */
+}
+
+.Question_box .Quiz .Next_btn_area #Next_btn:disabled:hover {
+    background-color: #C1234F; /* الحفاظ على لون الخلفية عند عدم إمكانية التمرير */
+    cursor: not-allowed; /* تأكيد شكل المؤشر "not allowed" */
+}
+
+/* ** bla bla bla ================ */
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 16px;
+    max-width: 600px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #272b34;
+}
+
+.audio-player button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #C1234F;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: linear;
+    transition-duration: 0.2s;
+    background-color: #272b34;
+}
+
+.audio-player button:hover {
+    background-color: #181a20;
+}
+
+button {
+    font-size: 16px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    width: calc(100% - 112px); /* Full width */
+    height: 5px; /* Height of the track */
+    background: #0e1015; /* Track color */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
+    margin: 0px 16px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* For Firefox */
+    width: 15px; /* Width of the thumb */
+    height: 15px; /* Height of the thumb */
+    background: #C1234F; /* Thumb color */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Pointer cursor */
+}
